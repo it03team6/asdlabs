@@ -2,31 +2,35 @@ import java.util.Scanner;
 
 public class RecursionLab {
     public static void main(String[] args) {
-        int result = NumSum(GetNaturalInt());
+        int printed = GetNaturalInt();
+        int resultinterative = NumSum(printed);
+        int resultRec = NumSumRec(printed);
 
-        System.out.println(result);
+
+        System.out.println("Інтеративно:"+resultinterative);
+        System.out.println("Рекурсивно:"+resultRec);
     }
 
 
-    /*private static int NumSumRec(int n)
+    private static int NumSumRec(int n)
     {
         if (n <= 9) return n;
 
         return (n%10)+NumSumRec(n/10);
-    }*/
+    }
 
     private static int NumSum(int n)
     {
         int res = 0;
-        int temp;
+        int remainder;
         while (n>9)
         {
-            temp = n%10;
-            res = temp + n/10;
+            remainder = n%10;
+            res += remainder;
             n = n/10;
         }
 
-        return res;
+        return res+n;
     }
 
 
