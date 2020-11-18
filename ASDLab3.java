@@ -1,4 +1,4 @@
-public class OpLab6 {
+public class ASDLab3 {
     public static void main(String[] args) {
         double[] testArr = CreateArray();
         double[] firstCopy = testArr.clone();
