@@ -3,8 +3,8 @@ package ua.kpi.fict.acts.it03.asd6;
 public class Main {
     public static void main(String[] args)
     {
-        int[] data = { 410, 25, 23, 854, 1, 69, 60};
-        //int[] data = CreateArray();
+        //int[] data = { 410, 25, 23, 854, 1, 69, 60};
+        int[] data = CreateArray();
         //int[] data = CrSortedArr();
         long m = System.currentTimeMillis();
         RadixSort.radixSort(data, data.length);
