@@ -164,7 +164,7 @@ public class AsdLab3 {
 
 
 
-/*    private static double[] BubbleSort(double[] array)
+    private static double[] BubbleSort(double[] array)
     {
         long m = System.nanoTime();
         for (int j = 0; j < array.length-1; j++)
@@ -181,9 +181,9 @@ public class AsdLab3 {
         }
         System.out.println("Bubble Time:"+ (double) (System.nanoTime() - m));
         return array;
-    }*/
+    }
 
-/*    private static double[] SelectionSort(double[] array)
+    private static double[] SelectionSort(double[] array)
     {
         long m = System.nanoTime();
         for (int i = 0; i < array.length-1; i++) {
@@ -199,9 +199,9 @@ public class AsdLab3 {
         }
         System.out.println("Selection Time:"+ (double) (System.nanoTime() - m));
         return array;
-    }*/
+    }
 
-/*    private static int[] InsertionSort(int[] array)
+    private static int[] InsertionSort(int[] array)
     {
         long m = System.currentTimeMillis();
         for (int i = 1; i < array.length-1; i++)
@@ -216,6 +216,6 @@ public class AsdLab3 {
         System.out.println("Insertion Time:"+ (double) (System.currentTimeMillis() - m) + "ms");
 
 return array;
-    }*/
+    }
 
 }
