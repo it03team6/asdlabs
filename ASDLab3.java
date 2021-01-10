@@ -201,21 +201,23 @@ public class AsdLab3 {
         return array;
     }
 
-    private static int[] InsertionSort(int[] array)
+private static int[] InsertionSort(int[] array)
     {
         long m = System.currentTimeMillis();
-        for (int i = 1; i < array.length-1; i++)
+        for (int i = 1; i < array.length; i++)
         {
-            for (int j=i-1; j > 0 && array[j-1]>array[j]; j--)
+            int key = array[i];
+            int j = i - 1;
+            while (j>=0 && array[j] > key)
             {
-                    int tmp = array[j-1];
-                    array[j-1] = array[j];
-                    array[j] = tmp;
+                array[j + 1] = array[j];
+                j--;
             }
+            array[j + 1] = key;
         }
         System.out.println("Insertion Time:"+ (double) (System.currentTimeMillis() - m) + "ms");
 
-return array;
+        return array;
     }
 
 }
