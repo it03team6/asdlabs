@@ -1,10 +1,3 @@
-# asdlabs
+# ASD LABS
 
-Labki c asd lejat tyt
-
-
-## ewe strochka
-
-hehe
-
-## qweq2e
+Here is labs for A&DS (FICT 1st semester)
